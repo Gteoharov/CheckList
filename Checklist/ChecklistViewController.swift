@@ -10,26 +10,10 @@ import UIKit
 
 class ChecklistViewController: UITableViewController {
     
-    var row0Item: ChecklistItem
-    var row1Item: ChecklistItem
-    var row2Item: ChecklistItem
-    var row3Item: ChecklistItem
-    var row4Item: ChecklistItem
-    
+    var todoList: TodoList
     
     required init?(coder aDecoder: NSCoder) {
-        row0Item = ChecklistItem()
-        row1Item = ChecklistItem()
-        row2Item = ChecklistItem()
-        row3Item = ChecklistItem()
-        row4Item = ChecklistItem()
-        
-        
-        row0Item.text = "Take a jog"
-        row1Item.text = "Watch a movie"
-        row2Item.text = "Code an app"
-        row3Item.text = "Walk the dog"
-        row4Item.text = "Study design patterns"
+        todoList = TodoList()
         super.init(coder: aDecoder)
     }
 
@@ -47,15 +31,15 @@ class ChecklistViewController: UITableViewController {
         
         if let label = cell.viewWithTag(1000) as? UILabel {
             if indexPath.row == 0 {
-                label.text = row0Item.text
+                label.text = todoList.todos[0].text
             } else if indexPath.row == 1 {
-                label.text = row1Item.text
+                label.text = todoList.todos[1].text
             } else if indexPath.row == 2 {
-                label.text = row2Item.text
+                label.text = todoList.todos[2].text
             } else if indexPath.row == 3 {
-                label.text = row3Item.text
+                label.text = todoList.todos[3].text
             } else if indexPath.row == 4 {
-                label.text = row4Item.text
+                label.text = todoList.todos[4].text
             }
         }
         configureCheckmark(for: cell, at: indexPath)
@@ -72,40 +56,40 @@ class ChecklistViewController: UITableViewController {
     
     func configureCheckmark(for cell: UITableViewCell, at indexPath: IndexPath) {
         if indexPath.row == 0 {
-            if row0Item.checked {
+            if todoList.todos[0].checked {
                 cell.accessoryType = .none
             } else {
                 cell.accessoryType = .checkmark
             }
-            row0Item.checked = !row0Item.checked
+            todoList.todos[0].checked = !todoList.todos[0].checked
         } else if indexPath.row == 1 {
-            if row1Item.checked {
+            if todoList.todos[1].checked {
                 cell.accessoryType = .none
             } else {
                 cell.accessoryType = .checkmark
             }
-            row1Item.checked = !row1Item.checked
+            todoList.todos[1].checked = !todoList.todos[1].checked
         } else if indexPath.row == 2 {
-            if row2Item.checked {
+            if todoList.todos[2].checked {
                 cell.accessoryType = .none
             } else {
                 cell.accessoryType = .checkmark
             }
-            row2Item.checked = !row2Item.checked
+            todoList.todos[2].checked = !todoList.todos[2].checked
         } else if indexPath.row == 3 {
-            if row3Item.checked {
+            if todoList.todos[3].checked {
                 cell.accessoryType = .none
             } else {
                 cell.accessoryType = .checkmark
             }
-            row3Item.checked = !row3Item.checked
+            todoList.todos[3].checked = !todoList.todos[3].checked
         } else if indexPath.row == 4 {
-            if row4Item.checked {
+            if todoList.todos[4].checked {
                 cell.accessoryType = .none
             } else {
                 cell.accessoryType = .checkmark
             }
-            row4Item.checked = !row4Item.checked
+            todoList.todos[4].checked = !todoList.todos[4].checked
         }
     }
 }
