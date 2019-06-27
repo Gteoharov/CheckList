@@ -13,6 +13,7 @@
 		218FD8A922C4F0D6005B0B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218FD8A822C4F0D6005B0B16 /* Assets.xcassets */; };
 		218FD8AC22C4F0D6005B0B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218FD8AA22C4F0D6005B0B16 /* LaunchScreen.storyboard */; };
 		218FD8B422C51B23005B0B16 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FD8B322C51B23005B0B16 /* ChecklistItem.swift */; };
+		218FD8B622C571BD005B0B16 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FD8B522C571BD005B0B16 /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		218FD8AB22C4F0D6005B0B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		218FD8AD22C4F0D6005B0B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218FD8B322C51B23005B0B16 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		218FD8B522C571BD005B0B16 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				218FD8A122C4F0D5005B0B16 /* AppDelegate.swift */,
 				218FD8A322C4F0D5005B0B16 /* ChecklistViewController.swift */,
+				218FD8B522C571BD005B0B16 /* TodoList.swift */,
 				218FD8A522C4F0D5005B0B16 /* Main.storyboard */,
 				218FD8A822C4F0D6005B0B16 /* Assets.xcassets */,
 				218FD8AA22C4F0D6005B0B16 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				218FD8A422C4F0D5005B0B16 /* ChecklistViewController.swift in Sources */,
 				218FD8B422C51B23005B0B16 /* ChecklistItem.swift in Sources */,
 				218FD8A222C4F0D5005B0B16 /* AppDelegate.swift in Sources */,
+				218FD8B622C571BD005B0B16 /* TodoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

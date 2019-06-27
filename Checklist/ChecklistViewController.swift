@@ -16,6 +16,7 @@ class ChecklistViewController: UITableViewController {
     var row3Item: ChecklistItem
     var row4Item: ChecklistItem
     
+    
     required init?(coder aDecoder: NSCoder) {
         row0Item = ChecklistItem()
         row1Item = ChecklistItem()
