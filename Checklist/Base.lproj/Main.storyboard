@@ -18,12 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wj8-Py-l6j">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" rowHeight="61" id="Se6-Ra-Xz5">
+                                <rect key="frame" x="0.0" y="28" width="414" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wj8-Py-l6j" id="NdT-eJ-Fvs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Se6-Ra-Xz5" id="g7a-NR-vw0">
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="60.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzP-Hm-zBL">
+                                            <rect key="frame" x="28" y="16" width="342" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NzP-Hm-zBL" firstAttribute="bottom" secondItem="g7a-NR-vw0" secondAttribute="bottomMargin" constant="5" id="7N7-m4-Bhm"/>
+                                        <constraint firstItem="NzP-Hm-zBL" firstAttribute="leading" secondItem="g7a-NR-vw0" secondAttribute="leadingMargin" constant="8" id="H6I-VY-bQ6"/>
+                                        <constraint firstItem="NzP-Hm-zBL" firstAttribute="top" secondItem="g7a-NR-vw0" secondAttribute="topMargin" constant="5" id="Lat-CS-CYz"/>
+                                        <constraint firstItem="NzP-Hm-zBL" firstAttribute="trailing" secondItem="g7a-NR-vw0" secondAttribute="trailingMargin" constant="8" id="OBd-KT-THz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -35,7 +49,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sld-gO-S7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="107"/>
+            <point key="canvasLocation" x="89.855072463768124" y="106.47321428571428"/>
         </scene>
     </scenes>
 </document>
