@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210B9C8522C62B8E0008AB44 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B9C8422C62B8E0008AB44 /* AddTableViewController.swift */; };
 		218FD8A222C4F0D5005B0B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FD8A122C4F0D5005B0B16 /* AppDelegate.swift */; };
 		218FD8A422C4F0D5005B0B16 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FD8A322C4F0D5005B0B16 /* ChecklistViewController.swift */; };
 		218FD8A722C4F0D5005B0B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218FD8A522C4F0D5005B0B16 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210B9C8422C62B8E0008AB44 /* AddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
 		218FD89E22C4F0D5005B0B16 /* Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		218FD8A122C4F0D5005B0B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		218FD8A322C4F0D5005B0B16 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				218FD8AA22C4F0D6005B0B16 /* LaunchScreen.storyboard */,
 				218FD8AD22C4F0D6005B0B16 /* Info.plist */,
 				218FD8B322C51B23005B0B16 /* ChecklistItem.swift */,
+				210B9C8422C62B8E0008AB44 /* AddTableViewController.swift */,
 			);
 			path = Checklist;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				218FD8B422C51B23005B0B16 /* ChecklistItem.swift in Sources */,
 				218FD8A222C4F0D5005B0B16 /* AppDelegate.swift in Sources */,
 				218FD8B622C571BD005B0B16 /* TodoList.swift in Sources */,
+				210B9C8522C62B8E0008AB44 /* AddTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
