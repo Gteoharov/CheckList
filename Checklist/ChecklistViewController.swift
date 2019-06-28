@@ -19,8 +19,20 @@ class ChecklistViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    @IBAction func addItem(_ sender: UIBarButtonItem) {
+        let newRowIndex = todoList.todos.count
+        _ = todoList.newTodo()
+        
+        let indexPath = IndexPath(row: newRowIndex, section: 0)
+        let indexPaths = [indexPath]
+        tableView.insertRows(at: indexPaths, with: .automatic)
+        
+    }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoList.todos.count
@@ -52,9 +64,9 @@ class ChecklistViewController: UITableViewController {
     func configureCheckmark(for cell: UITableViewCell, with item: ChecklistItem) {
         
         if item.checked {
-            cell.accessoryType = .none
-        } else {
             cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
         }
         item.toggleChecked()
     }
