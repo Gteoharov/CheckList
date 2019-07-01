@@ -8,22 +8,36 @@
 
 import UIKit
 
+protocol AddItemViewControllerDelegate: class {
+    
+    func addItemViewControllerDidCancel(_ controller: AddTableViewController)
+    func addItemViewController(_ controller: AddTableViewController, didFinishAdding item: ChecklistItem)
+    
+}
+
 class AddTableViewController: UITableViewController {
+    
+    weak var delegate: AddItemViewControllerDelegate?
+    
     @IBOutlet weak var cancelBarButton: UIBarButtonItem!
-    
     @IBOutlet weak var addBarButton: UIBarButtonItem!
-    
     @IBOutlet weak var textfield: UITextField!
+    
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
+        delegate?.addItemViewControllerDidCancel(self)
     }
-    
     
     
     @IBAction func done(_ sender: Any) {
         navigationController?.popViewController(animated: true)
-        print("Content of the text field is: \(textfield.text)")
+        let item = ChecklistItem()
+        if let textFieldText = textfield.text {
+            item.text = textFieldText
+        }
+        item.checked = false
+        delegate?.addItemViewController(self, didFinishAdding: item)
     }
     
     
@@ -32,6 +46,7 @@ class AddTableViewController: UITableViewController {
         textfield.delegate = self
         navigationItem.largeTitleDisplayMode = .never
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         textfield.becomeFirstResponder()
