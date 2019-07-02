@@ -26,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzP-Hm-zBL">
-                                            <rect key="frame" x="63" y="16.666666666666668" width="279" height="38.333333333333329"/>
+                                            <rect key="frame" x="63" y="16.666666666666668" width="41.666666666666657" height="38.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -44,16 +44,16 @@
                                     <constraints>
                                         <constraint firstItem="NzP-Hm-zBL" firstAttribute="bottom" secondItem="g7a-NR-vw0" secondAttribute="bottomMargin" priority="750" constant="5" id="7N7-m4-Bhm"/>
                                         <constraint firstItem="NzP-Hm-zBL" firstAttribute="top" secondItem="g7a-NR-vw0" secondAttribute="topMargin" priority="750" constant="5" id="Lat-CS-CYz"/>
-                                        <constraint firstItem="NzP-Hm-zBL" firstAttribute="trailing" secondItem="g7a-NR-vw0" secondAttribute="trailingMargin" constant="8" id="OBd-KT-THz"/>
                                         <constraint firstItem="Oqa-Ce-AuC" firstAttribute="top" secondItem="g7a-NR-vw0" secondAttribute="topMargin" constant="5" id="Q9B-tf-Drc"/>
                                         <constraint firstItem="Oqa-Ce-AuC" firstAttribute="firstBaseline" secondItem="NzP-Hm-zBL" secondAttribute="firstBaseline" id="je6-XE-k69"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NzP-Hm-zBL" secondAttribute="trailing" constant="20" symbolic="YES" id="naH-0D-76m"/>
                                         <constraint firstItem="NzP-Hm-zBL" firstAttribute="leading" secondItem="Oqa-Ce-AuC" secondAttribute="trailing" constant="28" id="sqT-sn-8GG"/>
                                         <constraint firstItem="Oqa-Ce-AuC" firstAttribute="bottom" secondItem="g7a-NR-vw0" secondAttribute="bottomMargin" id="z93-nV-Cyj"/>
                                         <constraint firstItem="Oqa-Ce-AuC" firstAttribute="leading" secondItem="g7a-NR-vw0" secondAttribute="leading" id="zer-rS-vDp"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="xc3-hP-936" kind="show" identifier="EditItemSegue" id="KHn-sl-rLv"/>
+                                    <segue destination="xc3-hP-936" kind="show" identifier="EditItemSegue" trigger="accessoryAction" id="oxB-3k-qKY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -155,6 +155,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KHn-sl-rLv"/>
+        <segue reference="oxB-3k-qKY"/>
     </inferredMetricsTieBreakers>
 </document>
