@@ -52,6 +52,9 @@
                                         <constraint firstItem="Oqa-Ce-AuC" firstAttribute="leading" secondItem="g7a-NR-vw0" secondAttribute="leading" id="zer-rS-vDp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="xc3-hP-936" kind="show" identifier="EditItemSegue" id="KHn-sl-rLv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -74,7 +77,7 @@
         <!--New Item-->
         <scene sceneID="Rhk-U1-Gfx">
             <objects>
-                <tableViewController id="xc3-hP-936" customClass="AddTableViewController" customModule="Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xc3-hP-936" customClass="ItemDetailViewController" customModule="Checklist" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ytH-oV-uv1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +119,7 @@
                                 <action selector="cancel:" destination="xc3-hP-936" id="dFm-Hb-lTB"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Add" id="14N-j6-qOg">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Done" id="14N-j6-qOg">
                             <connections>
                                 <action selector="done:" destination="xc3-hP-936" id="N0W-wi-yI5"/>
                             </connections>
@@ -151,4 +154,7 @@
             <point key="canvasLocation" x="89.855072463768124" y="106.47321428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KHn-sl-rLv"/>
+    </inferredMetricsTieBreakers>
 </document>
