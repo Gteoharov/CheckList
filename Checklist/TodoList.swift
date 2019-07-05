@@ -11,7 +11,7 @@ import Foundation
 
 class TodoList {
     
-    var todos: [ChecklistItem] = []
+    @objc var todos: [ChecklistItem] = []
     
     init() {
         
