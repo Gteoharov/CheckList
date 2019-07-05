@@ -65,7 +65,7 @@ class ChecklistViewController: UITableViewController {
             for index in selectedRows {
                 items.append(todoList.todos[index.row])
             }
-            todoList.delete(items: items)
+            todoList.remove(items: items)
             tableView.beginUpdates()
             tableView.deleteRows(at: selectedRows, with: .automatic)
             tableView.endUpdates()
